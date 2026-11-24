@@ -335,3 +335,14 @@ details.abstract .body { padding: 0 22px 10px; color: var(--ink-2); font-size: 1
   .entry-logo { width: 40px; height: 40px; }
 }
 .logo-item small { color: var(--muted); font-size: 13px; }
+
+/* college + affiliated university shown together */
+.logo-pair { display: inline-flex; align-items: center; gap: 8px; }
+.entry.with-logo.duo { grid-template-columns: 112px 1fr; }
+.entry.with-logo.duo .entry-logo { width: 112px; display: flex; gap: 8px; justify-content: flex-start; }
+.entry.with-logo.duo .entry-logo img { width: 52px; height: 52px; }
+@media (max-width: 640px) {
+  .entry.with-logo.duo { grid-template-columns: 88px 1fr; }
+  .entry.with-logo.duo .entry-logo { width: 88px; }
+  .entry.with-logo.duo .entry-logo img { width: 40px; height: 40px; }
+}
