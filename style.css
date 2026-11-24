@@ -296,3 +296,42 @@ details.abstract .body { padding: 0 22px 10px; color: var(--ink-2); font-size: 1
 .diagram.narrow svg { max-width: 720px; margin: 0 auto; }
 
 .card-media.svg svg { width: 100%; height: 100%; }
+
+/* ---------- clinical page & logos ---------- */
+.roles { display: grid; gap: 24px; }
+.role {
+  display: grid; grid-template-columns: 112px 1fr; gap: 28px; align-items: start;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 30px; box-shadow: var(--shadow);
+}
+.role-logo {
+  width: 112px; height: 112px; border-radius: 18px; background: #fff; border: 1px solid var(--line);
+  display: grid; place-items: center; padding: 14px;
+}
+.role-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.role h2 { font-size: 28px; margin: 10px 0 4px; }
+.role .org { font-size: 17px; font-weight: 600; color: var(--ink); margin: 0; }
+.role .meta { color: var(--muted); font-size: 15px; margin: 2px 0 16px; }
+.role ul { margin: 0; padding-left: 20px; color: var(--ink-2); }
+.role li { margin: 5px 0; }
+.role .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+
+.logo-strip { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 36px; padding: 28px 0 8px; }
+.logo-strip .label { font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.logo-item { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink-2); font-size: 14.5px; line-height: 1.3; }
+.logo-item:hover { color: var(--ink); }
+.logo-item img { height: 46px; width: auto; }
+
+.entry.with-logo { display: grid; grid-template-columns: 52px 1fr; gap: 18px; align-items: start; }
+.entry-logo { width: 52px; height: 52px; display: grid; place-items: center; }
+.entry-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+.fine { font-size: 13px; color: var(--muted); margin-top: 14px; }
+
+@media (max-width: 640px) {
+  .role { grid-template-columns: 1fr; gap: 16px; padding: 22px; }
+  .role-logo { width: 84px; height: 84px; }
+  .entry.with-logo { grid-template-columns: 40px 1fr; gap: 12px; }
+  .entry-logo { width: 40px; height: 40px; }
+}
+.logo-item small { color: var(--muted); font-size: 13px; }
