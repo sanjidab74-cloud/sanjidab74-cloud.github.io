@@ -308,7 +308,7 @@ details.abstract .body { padding: 0 22px 10px; color: var(--ink-2); font-size: 1
   width: 112px; height: 112px; border-radius: 18px; background: #fff; border: 1px solid var(--line);
   display: grid; place-items: center; padding: 14px;
 }
-.role-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.role-logo img { width: 100%; height: 100%; object-fit: contain; }
 .role h2 { font-size: 28px; margin: 10px 0 4px; }
 .role .org { font-size: 17px; font-weight: 600; color: var(--ink); margin: 0; }
 .role .meta { color: var(--muted); font-size: 15px; margin: 2px 0 16px; }
